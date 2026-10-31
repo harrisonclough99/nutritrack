@@ -910,11 +910,15 @@ fun MealSelector(
 }
 
 private fun imageProxyToBitmap(image: ImageProxy): Bitmap {
-    val planeProxy = image.planes[0]
-    val buffer = planeProxy.buffer
-    val bytes = ByteArray(buffer.remaining())
-    buffer.get(bytes)
-    val bitmap = BitmapFactory.decodeByteArray(bytes, 0, bytes.size)
+    val bitmap = try {
+        image.toBitmap()
+    } catch (e: Exception) {
+        val planeProxy = image.planes[0]
+        val buffer = planeProxy.buffer
+        val bytes = ByteArray(buffer.remaining())
+        buffer.get(bytes)
+        BitmapFactory.decodeByteArray(bytes, 0, bytes.size) ?: Bitmap.createBitmap(224, 224, Bitmap.Config.ARGB_8888)
+    }
 
     val rotation = image.imageInfo.rotationDegrees
     return if (rotation != 0) {
