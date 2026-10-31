@@ -1,0 +1,21 @@
+{
+  "model_name": "Nutrition5k On-Device Macronutrient Predictor",
+  "dataset": "Google Research Nutrition5k",
+  "input_tensor": "input_image",
+  "input_shape": [
+    1,
+    224,
+    224,
+    3
+  ],
+  "input_normalization": "[0.0, 1.0]",
+  "output_macros_index_mapping": {
+    "0": "calories_kcal",
+    "1": "mass_g",
+    "2": "protein_g",
+    "3": "fat_g",
+    "4": "carbohydrates_g"
+  },
+  "target_hardware": "Google Pixel 10 Pro (Tensor NPU / NNAPI / GPU)",
+  "offline_guarantee": true
+}

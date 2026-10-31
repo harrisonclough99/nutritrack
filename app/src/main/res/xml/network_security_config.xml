@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<network-security-config>
+    <!-- 
+      Strict Network Security Configuration for NutriTrack on Google Pixel 10 Pro
+      Per security specification:
+      All computation occurs on-device. The only allowed outbound traffic 
+      is to Open Food Facts API for barcode nutritional lookup.
+    -->
+    <base-config cleartextTrafficPermitted="false">
+        <trust-anchors>
+            <certificates src="system" />
+        </trust-anchors>
+    </base-config>
+
+    <domain-config cleartextTrafficPermitted="false">
+        <domain includeSubdomains="true">openfoodfacts.org</domain>
+        <domain includeSubdomains="true">openfoodfacts.net</domain>
+        <trust-anchors>
+            <certificates src="system" />
+        </trust-anchors>
+    </domain-config>
+</network-security-config>

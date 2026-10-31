@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    android:width="108dp"
+    android:height="108dp"
+    android:viewportWidth="108"
+    android:viewportHeight="108">
+
+    <!-- Subtle AI Camera Scanning Reticle Corners -->
+    <path
+        android:strokeColor="#55FFFFFF"
+        android:strokeWidth="1.5"
+        android:strokeLineCap="round"
+        android:pathData="M30,38 L30,30 L38,30" />
+    <path
+        android:strokeColor="#55FFFFFF"
+        android:strokeWidth="1.5"
+        android:strokeLineCap="round"
+        android:pathData="M78,38 L78,30 L70,30" />
+    <path
+        android:strokeColor="#55FFFFFF"
+        android:strokeWidth="1.5"
+        android:strokeLineCap="round"
+        android:pathData="M30,70 L30,78 L38,78" />
+    <path
+        android:strokeColor="#55FFFFFF"
+        android:strokeWidth="1.5"
+        android:strokeLineCap="round"
+        android:pathData="M78,70 L78,78 L70,78" />
+
+    <!-- Macro Target Ring 1: Calorie Track (Emerald Green Arc) -->
+    <path
+        android:strokeColor="#10B981"
+        android:strokeWidth="3.5"
+        android:strokeLineCap="round"
+        android:pathData="M54,29 A25,25 0 1,1 32,42" />
+
+    <!-- Macro Target Ring 2: Protein Track (Cyan Arc) -->
+    <path
+        android:strokeColor="#06B6D4"
+        android:strokeWidth="3.5"
+        android:strokeLineCap="round"
+        android:pathData="M54,35 A19,19 0 1,1 38,45" />
+
+    <!-- Macro Target Ring 3: Carb Track (Amber Arc) -->
+    <path
+        android:strokeColor="#F59E0B"
+        android:strokeWidth="3.5"
+        android:strokeLineCap="round"
+        android:pathData="M54,41 A13,13 0 1,1 44,48" />
+
+    <!-- Central Food Icon: Stylized Organic Leaf / Nutrition Heart (Vibrant Green & Coral) -->
+    <path
+        android:fillColor="#34D399"
+        android:pathData="M54,46 C50,42 45,46 47,52 C49,58 54,63 54,63 C54,63 59,58 61,52 C63,46 58,42 54,46 Z" />
+    <path
+        android:fillColor="#F43F5E"
+        android:pathData="M54,51 C52,49 49,51 50,54 C51,57 54,60 54,60 C54,60 57,57 58,54 C59,51 56,49 54,51 Z" />
+
+    <!-- Barcode Optical Scan Beam (Subtle Horizontal Laser) -->
+    <path
+        android:strokeColor="#E0F2FE"
+        android:strokeWidth="1.2"
+        android:pathData="M35,54 L73,54" />
+</vector>
